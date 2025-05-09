@@ -316,7 +316,7 @@ a:focus {
     width: 100%;
     min-height: 400px;
     background: #ffffff;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
 .carousel .container-fluid {
@@ -446,6 +446,25 @@ a:focus {
 .carousel .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
+}
+
+/* make the hero always fill 70vh–90vh, center & crop the image */
+.hero-carousel .carousel-img {
+    width: 100%;
+    height: 80vh;           /* adjust to taste: e.g. 60vh, 100vh, etc */
+    overflow: hidden;
+}
+
+.hero-carousel .carousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* crop/scale to fill */
+    object-position: center;
+}
+
+/* smooth height changes if you enable Owl’s autoHeight */
+.hero-carousel .owl-stage-outer {
+    transition: height .5s ease-in-out;
 }
 
 @media (max-width: 991.98px) {
