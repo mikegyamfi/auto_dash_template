@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Auto Dash – Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Car Wash Gallery">
+  <meta name="description" content="Browse our premium car wash gallery">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* Gallery Container */
+    .gallery-container {
+      padding: 60px 0;
+      background: #f8f9fa;
+    }
+    /* Swiper */
+    .swiper-container {
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.swiper-button-prev { left: 10px; }
+.swiper-button-next { right: 10px; }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  /* remove old positioning */
+  position: static;
+  transform: none;
+  font-size: 20px;
+  color: #fff;
+}
+    /* Lightbox captions default style tweak */
+    .lb-data .lb-caption {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar Start -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-12">
+          <div class="logo">
+            <a href="index.html"><img src="img/thumbnail_Autodash logo.png" alt="Logo"></a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+          <div class="row">
+            <div class="col-4">
+              <div class="top-bar-item">
+                <div class="top-bar-icon"><i class="far fa-clock"></i></div>
+                <div class="top-bar-text"><h3>Opening Hour</h3><p>Mon - Fri, 8:00am - 9:00am</p></div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="top-bar-item">
+                <div class="top-bar-icon"><i class="fa fa-phone-alt"></i></div>
+                <div class="top-bar-text"><h3>Call Us</h3><p>+233 24 399 3422</p></div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="top-bar-item">
+                <div class="top-bar-icon"><i class="far fa-envelope"></i></div>
+                <div class="top-bar-text"><h3>Email Us</h3><p>autodashgh@yahoo.com</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Top Bar End -->
+
+  <!-- Nav Bar Start -->
+  <div class="nav-bar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">MENU</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mr-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Service</a>
+            <a href="location.html" class="nav-item nav-link">Washing Points</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+            <a href="wash_club.html" class="nav-item nav-link">Wash Club</a>
+            <a href="faq.html" class="nav-item nav-link">FAQ</a>
+            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+          </div>
+          <div class="ml-auto">
+            <a class="btn btn-custom" href="tel:+23324993422">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Nav Bar End -->
+
+  <!-- Gallery Start -->
+  <div class="gallery-container">
+    <div class="container-fluid">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Each slide: wrap image in <a> for Lightbox -->
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0009.jpg" data-lightbox="gallery" data-title="Exterior shine">
+              <img src="img/gallery/IMG-20250511-WA0009.jpg" alt="Gallery Image 1">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0010.jpg" data-lightbox="gallery" data-title="Under-carriage wash">
+              <img src="img/gallery/IMG-20250511-WA0010.jpg" alt="Gallery Image 2">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0011.jpg" data-lightbox="gallery" data-title="Engine bay clean">
+              <img src="img/gallery/IMG-20250511-WA0011.jpg" alt="Gallery Image 3">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0012.jpg" data-lightbox="gallery" data-title="Steam engine wash">
+              <img src="img/gallery/IMG-20250511-WA0012.jpg" alt="Gallery Image 4">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0013.jpg" data-lightbox="gallery" data-title="Interior vacuuming">
+              <img src="img/gallery/IMG-20250511-WA0013.jpg" alt="Gallery Image 5">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0014.jpg" data-lightbox="gallery" data-title="Headlight restoration">
+              <img src="img/gallery/IMG-20250511-WA0014.jpg" alt="Gallery Image 6">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0015.jpg" data-lightbox="gallery" data-title="Full interior detail">
+              <img src="img/gallery/IMG-20250511-WA0015.jpg" alt="Gallery Image 7">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0016.jpg" data-lightbox="gallery" data-title="Premium waxing">
+              <img src="img/gallery/IMG-20250511-WA0016.jpg" alt="Gallery Image 8">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0017.jpg" data-lightbox="gallery" data-title="Paint polishing">
+              <img src="img/gallery/IMG-20250511-WA0017.jpg" alt="Gallery Image 9">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="img/gallery/IMG-20250511-WA0018.jpg" data-lightbox="gallery" data-title="Scratch removal">
+              <img src="img/gallery/IMG-20250511-WA0018.jpg" alt="Gallery Image 10">
+            </a>
+          </div>
+          <!-- Repeat as needed... -->
+        </div>
+        <!-- Pagination & navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery End -->
+
+  <!-- Footer Start -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-contact">
+            <h2>Get In Touch</h2>
+            <p><i class="fa fa-phone-alt"></i>+233 24 399 3422</p>
+            <p><i class="fa fa-envelope"></i>autodashgh@yahoo.com</p>
+            <div class="footer-social">
+              <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-link">
+            <h2>Popular Links</h2>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Our Service</a>
+            <a href="location.html">Service Points</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-link">
+            <h2>Useful Links</h2>
+            <a href="faq.html">FAQ</a>
+            <a href="wash_club.html">Wash Club</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; <a href="#">Auto Dash</a>, All Right Reserved. Designed By <a href="https://cortex.ddttechnologies.com">The Cortex</a></p>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      loop: true,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+    });
+  </script>
+</body>
+</html>
